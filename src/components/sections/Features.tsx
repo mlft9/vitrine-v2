@@ -12,68 +12,68 @@ import {
 
 const features = [
   {
-    name: 'Lightning Fast Performance',
-    description: 'Experience unparalleled speed with our NVMe SSD storage and high-performance AMD EPYC processors.',
+    name: 'Performances Foudroyantes',
+    description: 'Profitez d’une vitesse inégalée grâce à notre stockage NVMe SSD et nos processeurs AMD EPYC haute performance.',
     icon: BoltIcon,
     stats: [
-      { value: '99.9%', label: 'Uptime' },
-      { value: '<20ms', label: 'Latency' },
-      { value: '3.9GHz', label: 'CPU Clock' },
+      { value: '99.9%', label: 'Disponibilité' },
+      { value: '<20ms', label: 'Latence' },
+      { value: '3.9GHz', label: 'Fréquence CPU' },
     ],
     gradient: 'from-amber-500 to-orange-600',
   },
   {
-    name: 'DDoS Protection',
-    description: 'Enterprise-grade protection against DDoS attacks with automatic mitigation and real-time monitoring.',
+    name: 'Protection Anti-DDoS',
+    description: 'Protection de niveau entreprise contre les attaques DDoS avec atténuation automatique et surveillance en temps réel.',
     icon: ShieldCheckIcon,
     stats: [
       { value: '1Tbps+', label: 'Protection' },
-      { value: '100%', label: 'Attack Block' },
-      { value: '24/7', label: 'Monitoring' },
+      { value: '100%', label: 'Attaques Bloquées' },
+      { value: '24/7', label: 'Surveillance' },
     ],
     gradient: 'from-blue-500 to-cyan-600',
   },
   {
-    name: 'Instant Setup',
-    description: 'Get your server up and running in seconds with our automated deployment system and one-click installers.',
+    name: 'Mise en Ligne Instantanée',
+    description: 'Mettez votre serveur en ligne en quelques secondes grâce à notre système de déploiement automatisé et nos installateurs en un clic.',
     icon: ClockIcon,
     stats: [
-      { value: '<30s', label: 'Setup Time' },
-      { value: '1-Click', label: 'Install' },
+      { value: '<30s', label: 'Temps de Mise en Ligne' },
+      { value: '1-Clic', label: 'Installation' },
       { value: '24/7', label: 'Support' },
     ],
     gradient: 'from-green-500 to-emerald-600',
   },
   {
-    name: 'Premium Hardware',
-    description: 'Top-tier hardware with dedicated resources. No overselling, just pure performance for your games.',
+    name: 'Matériel Premium',
+    description: 'Matériel de pointe avec des ressources dédiées. Pas de survente, juste des performances pures pour vos jeux.',
     icon: CpuChipIcon,
     stats: [
-      { value: '64GB', label: 'DDR4 RAM' },
+      { value: '64GB', label: 'RAM DDR4' },
       { value: '12TB', label: 'NVMe' },
-      { value: '32', label: 'Cores' },
+      { value: '32', label: 'Cœurs' },
     ],
     gradient: 'from-purple-500 to-primary-400',
   },
   {
-    name: 'Global Network',
-    description: 'Multiple locations worldwide ensure low latency for players. Choose the location closest to your playerbase.',
+    name: 'Réseau Global',
+    description: 'Plusieurs emplacements dans le monde garantissent une faible latence pour les joueurs. Choisissez l’emplacement le plus proche de votre communauté.',
     icon: ServerIcon,
     stats: [
-      { value: '10', label: 'Locations' },
-      { value: '40Gbps', label: 'Network' },
-      { value: '0%', label: 'Packet Loss' },
+      { value: '10', label: 'Emplacements' },
+      { value: '40Gbps', label: 'Réseau' },
+      { value: '0%', label: 'Perte de Paquets' },
     ],
     gradient: 'from-pink-500 to-rose-600',
   },
   {
-    name: 'Fair Pricing',
-    description: 'Transparent pricing with no hidden fees. Pay only for what you need, scale as your community grows.',
+    name: 'Tarification Équitable',
+    description: 'Tarification transparente sans frais cachés. Payez uniquement pour ce dont vous avez besoin, évoluez avec votre communauté.',
     icon: CurrencyDollarIcon,
     stats: [
-      { value: '$2.99', label: 'Starting at' },
-      { value: '30 Day', label: 'Money Back' },
-      { value: '0', label: 'Hidden Fees' },
+      { value: '2,99€', label: 'À partir de' },
+      { value: '30 Jours', label: 'Garantie Remboursement' },
+      { value: '0', label: 'Frais Cachés' },
     ],
     gradient: 'from-teal-500 to-emerald-600',
   },
@@ -90,13 +90,13 @@ export default function Features() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-base font-semibold leading-7 text-primary-400 dark:text-primary-300">
-              Why Choose Us
+              Pourquoi nous choisir ?
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Premium Game Hosting Experience
+              L'expérience FrozenHost
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Experience the difference with our cutting-edge infrastructure and premium features designed for serious gamers.
+              Découvrez la différence avec notre infrastructure de pointe et nos fonctionnalités premium conçues pour vous.
             </p>
           </motion.div>
         </div>

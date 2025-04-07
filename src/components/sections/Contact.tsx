@@ -93,7 +93,7 @@ export default function Contact() {
             <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Disponibilité</h3>
             <div className="mt-4 text-center space-y-2">
               <p className="text-base text-gray-500 dark:text-gray-400">
-                <span className="font-medium">Support Discord</span> 24h/24 et 7j/7 (Les réponses peuvent prendre plus de temps pendant les week-ends)
+                <span className="font-medium">Support Discord</span> 24h/24 et 7j/7 (Les réponses peuvent prendre plus de temps pendaznt l)
               </p>
             </div>
           </div>
