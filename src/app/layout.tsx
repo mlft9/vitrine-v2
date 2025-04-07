@@ -8,8 +8,8 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ANZAZ - Premium Game Server Hosting',
-  description: 'High-performance game server hosting with 24/7 support and instant setup.',
+  title: 'FrozenHost - Hébergement Premium de Serveurs de Jeux',
+  description: 'Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées.',
 };
 
 export default function RootLayout({

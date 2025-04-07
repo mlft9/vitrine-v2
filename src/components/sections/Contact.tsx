@@ -10,26 +10,18 @@ import {
 
 const contactMethods = [
   {
-    name: 'Support Ticket',
-    description: 'Get help with technical issues or account-related questions.',
-    icon: QuestionMarkCircleIcon,
-    buttonText: 'Open Ticket',
-    href: '#',
+    name: 'Ticket Discord',
+    description: 'Rejoignez notre serveur Discord pour une assistance rapide.',
+    icon: ChatBubbleLeftRightIcon,
+    buttonText: 'Rejoindre le serveur',
+    href: 'https://discord.gg/b4dgg75MmG',
     primary: true,
   },
   {
-    name: 'Live Chat',
-    description: 'Chat with our support team for quick assistance during business hours.',
-    icon: ChatBubbleLeftRightIcon,
-    buttonText: 'Start Chat',
-    href: '#',
-    primary: false,
-  },
-  {
-    name: 'Documentation',
-    description: 'Browse our guides and tutorials for step-by-step help.',
+    name: 'Wiki & Documentation',
+    description: 'Découvrez notre documentation complète et nos guides.',
     icon: DocumentTextIcon,
-    buttonText: 'View Guides',
+    buttonText: 'Découvrir',
     href: '#',
     primary: false,
   },
@@ -46,16 +38,16 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Contact Support
+              Contacter le support
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Get help from our team 24/7. Choose your preferred support option below.
+              Obtenez de l'aide de notre équipe 24h/24 et 7j/7. Choisissez votre option de support préférée ci-dessous.
             </p>
           </motion.div>
         </div>
 
         {/* Contact methods grid */}
-        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
           {contactMethods.map((method, index) => (
             <motion.div
               key={method.name}
@@ -98,13 +90,10 @@ export default function Contact() {
         >
           <div className="flex flex-col items-center p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-700/5">
             <ClockIcon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
-            <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Support Availability</h3>
+            <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Disponibilité</h3>
             <div className="mt-4 text-center space-y-2">
               <p className="text-base text-gray-500 dark:text-gray-400">
-                <span className="font-medium">Ticket Support:</span> 24/7 (Response within 2 hours)
-              </p>
-              <p className="text-base text-gray-500 dark:text-gray-400">
-                <span className="font-medium">Live Chat:</span> 9 AM - 6 PM EST (Instant response)
+                <span className="font-medium">Support Discord</span> 24h/24 et 7j/7 (Les réponses peuvent prendre plus de temps pendant les week-ends)
               </p>
             </div>
           </div>

@@ -6,53 +6,53 @@ import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 const faqs = [
   {
-    category: 'Getting Started',
+    category: 'Pour commencer',
     questions: [
       {
-        question: 'How do I create a game server?',
-        answer: 'Creating a game server is simple: Select your game, choose a plan, pick a location, and click "Deploy". Your server will be ready within 60 seconds.',
+        question: 'Comment commander un serveur de jeu ?',
+        answer: 'Pour commander un serveur, choisissez le jeu souhaité sur notre site, sélectionnez le plan qui vous convient, et suivez les instructions pour créer un compte. Une fois le paiement effectué, votre serveur sera prêt en quelques minutes.',
       },
       {
-        question: 'What payment methods do you accept?',
-        answer: 'We accept all major credit cards, PayPal, and cryptocurrency (Bitcoin, Ethereum). All payments are processed securely through our payment partners.',
+        question: 'Quels moyens de paiement acceptez-vous ?',
+        answer: 'Nous acceptons toutes les principales cartes de crédit, PayPal. Tous les paiements sont traités de manière sécurisée via nos partenaires de paiement.',
       },
       {
-        question: 'Can I upgrade my server later?',
-        answer: 'Yes! You can upgrade your server&apos;s resources (RAM, CPU, storage) at any time through your control panel. Changes take effect immediately.',
+        question: 'Puis-je améliorer mon serveur plus tard ?',
+        answer: 'Oui ! Vous pouvez augmenter les ressources de votre serveur (RAM, CPU, stockage) à tout moment via votre panneau de contrôle. Les modifications prennent effet immédiatement.',
       },
     ],
   },
   {
-    category: 'Technical',
+    category: 'Technique',
     questions: [
       {
-        question: 'What control panel do you use?',
-        answer: 'We use the Pterodactyl panel, a modern game server management panel. It provides full file access, console, backups, and more.',
+        question: 'Quel panneau de contrôle utilisez-vous ?',
+        answer: 'Nous utilisons le panneau Pterodactyl, un panneau moderne de gestion de serveurs de jeu. Il offre un accès complet aux fichiers, une console, des sauvegardes, et plus encore.',
       },
       {
-        question: 'Do you offer DDoS protection?',
-        answer: 'Yes, all our servers include enterprise-grade DDoS protection at no additional cost. Our protection can mitigate attacks up to 1Tbps.',
+        question: 'Proposez-vous une protection contre les DDoS ?',
+        answer: 'Oui, tous nos serveurs incluent une protection DDoS de niveau entreprise sans coût supplémentaire. Notre protection peut atténuer des attaques allant jusqu’à 1 Tbps.',
       },
       {
-        question: 'Can I install custom mods?',
-        answer: 'Absolutely! You have full FTP access to your server and can install any mods compatible with your game. Our panel makes mod management easy.',
+        question: 'Puis-je installer des mods personnalisés ?',
+        answer: 'Absolument ! Vous avez un accès FTP complet à votre serveur et pouvez installer tous les mods compatibles avec votre jeu. Notre panneau facilite la gestion des mods.',
       },
     ],
   },
   {
-    category: 'Billing & Support',
+    category: 'Tarifs et support',
     questions: [
       {
-        question: 'What is your refund policy?',
-        answer: 'We offer a 24-hour money-back guarantee. If you&apos;re not satisfied with our service, contact support within 24 hours for a full refund.',
+        question: 'Quelle est votre politique de remboursement ?',
+        answer: 'Nous offrons une garantie de remboursement de 24 heures. Si vous n’êtes pas satisfait de notre service, contactez le support dans les 24 heures pour un remboursement complet.',
       },
       {
-        question: 'How can I contact support?',
-        answer: 'Support is available 24/7 through our ticket system. Premium plans also get access to priority support and Discord assistance.',
+        question: 'Comment puis-je contacter le support ?',
+        answer: 'Le support est disponible 24/7 via notre système de tickets sur notre Discord.',
       },
       {
-        question: 'Do you offer monthly billing?',
-        answer: 'Yes, all our plans can be billed monthly. We also offer discounts for quarterly and annual billing.',
+        question: 'Proposez-vous une facturation mensuelle ?',
+        answer: 'Oui, tous nos plans peuvent être facturés mensuellement.',
       },
     ],
   },
@@ -69,7 +69,7 @@ export default function FAQ() {
             transition={{ duration: 0.5 }}
           >
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Frequently Asked Questions
+              Questions Fréquemment Posées
             </p>
           </motion.div>
         </div>

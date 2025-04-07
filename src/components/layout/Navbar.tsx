@@ -37,128 +37,64 @@ interface NavItem {
   price?: string;
 }
 
-const solutions: NavItem[] = [
+const vps: NavItem[] = [
   {
-    name: 'Website Hosting',
-    description: 'Deploy and manage your website with ease',
+    name: 'VPS Windows',
+    description: 'Vos besoins sur un VPS Windows',
     href: '/website-hosting',
     icon: ServerIcon
   },
   {
-    name: 'Bot Hosting',
-    description: 'Host your bot with us',
+    name: 'VPS Linux',
+    description: 'Vos besoins sur un VPS Linux',
     href: '/bot-hosting',
     icon: CommandLineIcon
-  },
-  {
-    name: 'VPS Hosting',
-    description: 'Virtual Private Server for your needs',
-    href: '/vps-hosting',
-    icon: CpuChipIcon
-  },
-  {
-    name: 'Dedicated',
-    description: 'Dedicated server for your business',
-    href: '/dedicated',
-    icon: CloudIcon
-  },
-  {
-    name: 'Domain',
-    description: 'Domain registration and management',
-    href: '/domain',
-    icon: ShieldCheckIcon
   },
 ];
 
 const games: NavItem[] = [
   {
     name: 'Minecraft',
-    description: 'Popular sandbox game',
+    description: 'Serveur Minecraft',
     href: '/minecraft',
     icon: HomeIcon,
     image: '/images/navbar/minecraft.svg'
   },
   {
-    name: 'Palworld',
-    description: 'Popular survival game',
+    name: 'FiveM',
+    description: 'Serveur FiveM',
     href: '/palworld',
     icon: HomeIcon,
     image: '/images/navbar/palworld.svg'
   },
-  {
-    name: 'Ark Survival Evolved',
-    description: 'Popular survival game',
-    href: '/ark-survival-evolved',
-    icon: HomeIcon,
-    image: '/images/navbar/ark.svg'
-  },
-  {
-    name: 'Satisfactory',
-    description: 'Popular exploration game',
-    href: '/satisfactory',
-    icon: HomeIcon,
-    image: '/images/navbar/satisfactory.svg'
-  },
-  {
-    name: 'Valheim',
-    description: 'Popular survival game',
-    href: '/valheim',
-    icon: HomeIcon,
-    image: '/images/navbar/valheim.svg'
-  },
-  {
-    name: 'Browse',
-    description: 'Browse all games',
-    href: '/browse',
-    icon: HomeIcon,
-    image: '/images/navbar/browse.svg'
-  },
 ];
 
-const company: NavItem[] = [
+const web: NavItem[] = [
   {
     name: 'Contact',
     description: 'Contact us for any inquiry',
     href: '/contact',
     icon: BuildingOfficeIcon
   },
-  {
-    name: 'About',
-    description: 'About our company',
-    href: '/about',
-    icon: UserGroupIcon
-  },
-  {
-    name: 'Careers',
-    description: 'Join our team',
-    href: '/careers',
-    icon: BriefcaseIcon
-  },
-  {
-    name: 'Partners',
-    description: 'Our partners',
-    href: '/partners',
-    icon: UsersIcon
-  },
 ];
 
 const resources: NavItem[] = [
   {
-    name: 'Knowledgebase',
-    description: 'Knowledgebase for our services',
-    href: '/knowledgebase',
+    name: 'Wiki',
+    description: 'Notre wiki pour toutes les informations',
+    href: '/wiki',
     icon: BookOpenIcon
   },
   {
-    name: 'Blogs',
-    description: 'Our blog for latest news',
-    href: '/blog',
-    icon: NewspaperIcon
+    name: 'Notre Discord',
+    description: 'Rejoignez notre communauté sur Discord',
+    href: 'https://discord.gg/b4dgg75MmG',
+    icon: UsersIcon
   },
   {
-    name: 'Legal Policies',
-    description: 'Our legal policies',
-    href: '/legal-policies',
+    name: 'Mentions Légales',
+    description: 'Mentions légales de notre site',
+    href: '/legal-notice',
     icon: ScaleIcon
   },
 ];
@@ -197,7 +133,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                ANZAZ
+                FrozenHost
               </motion.span>
             </Link>
           </div>
@@ -207,28 +143,30 @@ export default function Navbar() {
             <Link
               href="/"
               className={cn(
-                'inline-flex items-center text-sm font-semibold leading-6',
-                pathname === '/'
-                  ? 'text-primary-400 dark:text-primary-300'
-                  : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+              'inline-flex items-center text-sm font-semibold leading-6',
+              pathname === '/'
+                ? 'text-primary-400 dark:text-primary-300'
+                : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
               )}
             >
               <HomeIcon className="h-5 w-5 mr-1" />
-              Home
+              Accueil
             </Link>
 
-            <NavDropdown title="Solutions" items={solutions} />
-            <NavMegaMenu title="Games" items={games} />
-            <NavDropdown title="Company" items={company} />
-            <NavDropdown title="Resources" items={resources} />
+            <NavDropdown title="Espace Cloud" items={vps} />
+            <NavMegaMenu title="Offres Games" items={games} />
+            <NavDropdown title="Univers Web" items={web} />
+            <NavDropdown title="Ressources" items={resources} />
             
             <Link
-              href="/support"
+              href="https://discord.gg/b4dgg75MmG"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
-                'inline-flex items-center text-sm font-semibold leading-6',
-                pathname === '/support'
-                  ? 'text-primary-400 dark:text-primary-300'
-                  : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+              'inline-flex items-center text-sm font-semibold leading-6',
+              pathname === 'https://discord.gg/b4dgg75MmG'
+                ? 'text-primary-400 dark:text-primary-300'
+                : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
               )}
             >
               <QuestionMarkCircleIcon className="h-5 w-5 mr-1" />
@@ -245,7 +183,7 @@ export default function Navbar() {
                 className={`inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-300`}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
-                <span className="sr-only">Open main menu</span>
+                <span className="sr-only">Ouvrir le menu</span>
                 {isMobileMenuOpen ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                 ) : (
@@ -261,13 +199,13 @@ export default function Navbar() {
                 href="/login"
                 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300 transition-colors duration-200"
               >
-                Log in
+                Se connecter
               </Link>
               <Link
                 href="/register"
                 className="rounded-md bg-primary-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
               >
-                Get started
+                Commencer
               </Link>
             </div>
           </div>
@@ -291,13 +229,13 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <HomeIcon className="h-6 w-6 text-gray-600 dark:text-gray-400" />
-              <span className="font-semibold">Home</span>
+              <span className="font-semibold">Accueil</span>
             </Link>
 
-            <MobileNavDropdown title="Solutions" items={solutions} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-            <MobileNavDropdown title="Games" items={games} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-            <MobileNavDropdown title="Company" items={company} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-            <MobileNavDropdown title="Resources" items={resources} setIsMobileMenuOpen={setIsMobileMenuOpen} />
+            <MobileNavDropdown title="Espace Cloud" items={vps} setIsMobileMenuOpen={setIsMobileMenuOpen} />
+            <MobileNavDropdown title="Offres Games" items={games} setIsMobileMenuOpen={setIsMobileMenuOpen} />
+            <MobileNavDropdown title="Univers Web" items={web} setIsMobileMenuOpen={setIsMobileMenuOpen} />
+            <MobileNavDropdown title="Ressources" items={resources} setIsMobileMenuOpen={setIsMobileMenuOpen} />
 
             <Link
               href="/support"
@@ -314,14 +252,14 @@ export default function Navbar() {
                 className="block w-full rounded-lg px-4 py-2 text-center text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Log in
+                Se connecter
               </Link>
               <Link
                 href="/register"
                 className="block w-full rounded-lg px-4 py-2 text-center text-sm font-semibold bg-primary-400 text-white hover:bg-primary-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get started
+                Commencer
               </Link>
             </div>
           </div>
@@ -551,7 +489,7 @@ function NavMegaMenu({ title, items }: { title: string; items: NavItem[] }) {
                         </p>
                         {item.price && (
                           <p className="mt-1 font-medium text-primary-400 dark:text-primary-300">
-                            Starting at {item.price}
+                            A partir de : {item.price}
                           </p>
                         )}
                       </div>

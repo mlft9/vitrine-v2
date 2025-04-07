@@ -7,77 +7,18 @@ import { GlobeAltIcon, BoltIcon, SignalIcon } from '@heroicons/react/24/outline'
 const locations = [
   { 
     id: 1, 
-    name: 'New York', 
-    region: 'North America East',
+    name: 'Jupiter', 
+    region: 'Europe - Allemagne',
     ping: '< 10ms',
-    servers: '1000+',
     status: '99.99%'
   },
   { 
     id: 2, 
-    name: 'Los Angeles', 
-    region: 'North America West',
-    ping: '< 15ms',
-    servers: '800+',
-    status: '99.99%'
-  },
-  { 
-    id: 3, 
-    name: 'London', 
-    region: 'Europe West',
-    ping: '< 12ms',
-    servers: '1200+',
-    status: '99.99%'
-  },
-  { 
-    id: 4, 
-    name: 'Frankfurt', 
-    region: 'Europe Central',
+    name: 'Mars', 
+    region: 'Europe - France',
     ping: '< 10ms',
-    servers: '1500+',
     status: '99.99%'
   },
-  { 
-    id: 5, 
-    name: 'Singapore', 
-    region: 'Asia Southeast',
-    ping: '< 15ms',
-    servers: '600+',
-    status: '99.99%'
-  },
-  { 
-    id: 6, 
-    name: 'Tokyo', 
-    region: 'Asia Northeast',
-    ping: '< 12ms',
-    servers: '800+',
-    status: '99.99%'
-  },
-  { 
-    id: 7, 
-    name: 'Sydney', 
-    region: 'Oceania',
-    ping: '< 18ms',
-    servers: '400+',
-    status: '99.99%'
-  },
-  { 
-    id: 8, 
-    name: 'São Paulo', 
-    region: 'South America',
-    ping: '< 20ms',
-    servers: '300+',
-    status: '99.99%'
-  },
-];
-
-const regions = [
-  'All Regions',
-  'North America',
-  'Europe',
-  'Asia',
-  'Oceania',
-  'South America'
 ];
 
 export default function LocationsMap() {
@@ -91,12 +32,12 @@ export default function LocationsMap() {
     <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary-600 dark:text-primary-400">Global Network</h2>
+          <h2 className="text-base font-semibold leading-7 text-primary-600 dark:text-primary-400">Notre réseau</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-            Server Locations
+            Nos serveurs
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-            Our globally distributed network ensures low latency for players worldwide.
+            Découvrez notre réseau de serveurs, offrant une latence ultra-rapide et une disponibilité garantie de 99.99%.
           </p>
         </div>
 
@@ -109,8 +50,8 @@ export default function LocationsMap() {
             className="rounded-xl bg-white p-8 ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700"
           >
             <GlobeAltIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
-            <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">8</h3>
-            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Global Locations</p>
+            <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">2</h3>
+            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Total de nos serveurs</p>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -120,7 +61,7 @@ export default function LocationsMap() {
           >
             <BoltIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
             <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">&lt; 20ms</h3>
-            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Average Latency</p>
+            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Moyenne de latence</p>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -130,31 +71,14 @@ export default function LocationsMap() {
           >
             <SignalIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
             <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">99.99%</h3>
-            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Uptime Guarantee</p>
+            <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Fonctionnement garanti</p>
           </motion.div>
-        </div>
-
-        {/* Region Filter */}
-        <div className="mt-16 flex justify-center gap-4 flex-wrap">
-          {regions.map((region) => (
-            <button
-              key={region}
-              onClick={() => setSelectedRegion(region)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                selectedRegion === region
-                  ? 'bg-primary-600 text-white dark:bg-primary-500'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
-              }`}
-            >
-              {region}
-            </button>
-          ))}
         </div>
 
         {/* Location Cards */}
         <motion.div 
           layout
-          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2"
         >
           {filteredLocations.map((location) => (
             <motion.div
@@ -177,15 +101,11 @@ export default function LocationsMap() {
               
               <dl className="mt-4 grid grid-cols-1 gap-4 text-sm">
                 <div className="flex justify-between">
-                  <dt className="text-gray-600 dark:text-gray-400">Latency:</dt>
+                  <dt className="text-gray-600 dark:text-gray-400">Latence :</dt>
                   <dd className="font-medium text-gray-900 dark:text-white">{location.ping}</dd>
                 </div>
                 <div className="flex justify-between">
-                  <dt className="text-gray-600 dark:text-gray-400">Servers:</dt>
-                  <dd className="font-medium text-gray-900 dark:text-white">{location.servers}</dd>
-                </div>
-                <div className="flex justify-between">
-                  <dt className="text-gray-600 dark:text-gray-400">Uptime:</dt>
+                  <dt className="text-gray-600 dark:text-gray-400">Fonctionnement :</dt>
                   <dd className="font-medium text-gray-900 dark:text-white">{location.status}</dd>
                 </div>
               </dl>

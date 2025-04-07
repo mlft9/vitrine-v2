@@ -29,109 +29,74 @@ import {
 
 const features = [
   {
-    name: 'Server Management',
-    description: 'Start, stop, and restart your server with a single click. Monitor resource usage in real-time.',
+    name: 'Gestion du Serveur',
+    description: 'Démarrez, arrêtez et redémarrez votre serveur en un clic. Surveillez l’utilisation des ressources en temps réel.',
     icon: ServerIcon,
   },
   {
-    name: 'Console Access',
-    description: 'Full console access with command history and auto-completion. Send commands directly to your server.',
+    name: 'Accès à la Console',
+    description: 'Accès complet à la console avec historique des commandes et auto-complétion. Envoyez des commandes directement à votre serveur.',
     icon: CommandLineIcon,
   },
   {
-    name: 'Resource Management',
-    description: 'Monitor CPU, RAM, and disk usage. Set resource limits and receive alerts.',
+    name: 'Gestion des Ressources',
+    description: 'Surveillez l’utilisation du CPU, de la RAM et du disque. Définissez des limites de ressources et recevez des alertes.',
     icon: CpuChipIcon,
   },
   {
-    name: 'File Manager',
-    description: 'Browse, edit, upload, and download files directly through the web interface.',
+    name: 'Gestionnaire de Fichiers',
+    description: 'Parcourez, modifiez, téléchargez et envoyez des fichiers directement via l’interface web.',
     icon: FolderIcon,
   },
   {
-    name: 'Plugin Manager',
-    description: 'Install, update, and manage plugins with our easy-to-use interface. Browse popular plugins.',
-    icon: PuzzlePieceIcon,
-  },
-  {
-    name: 'Database Manager',
-    description: 'Create and manage MySQL/MongoDB databases. Import/export data with ease.',
+    name: 'Gestionnaire de Bases de Données',
+    description: 'Créez et gérez des bases de données MySQL/MongoDB. Importez/exportez des données facilement.',
     icon: CircleStackIcon,
   },
   {
-    name: 'Subuser Manager',
-    description: 'Grant specific permissions to team members. Control access levels and monitor activity.',
+    name: 'Gestion des Sous-utilisateurs',
+    description: 'Accordez des permissions spécifiques aux membres de l’équipe. Contrôlez les niveaux d’accès et surveillez l’activité.',
     icon: UserGroupIcon,
   },
   {
-    name: 'Player Manager',
-    description: 'Manage player whitelist, bans, and permissions. View player statistics and history.',
+    name: 'Gestion des Joueurs',
+    description: 'Gérez la liste blanche, les bannissements et les permissions des joueurs. Consultez les statistiques et l’historique des joueurs.',
     icon: UsersIcon,
   },
   {
-    name: 'Version Manager',
-    description: 'Switch between game versions easily. Automatic version detection and updates.',
+    name: 'Gestionnaire de Versions',
+    description: 'Changez facilement de version de jeu. Détection automatique des versions et mises à jour.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Server Importer',
-    description: 'Import existing servers from other hosting providers or local machines.',
+    name: 'Importateur de Serveur',
+    description: 'Importez des serveurs existants depuis d’autres fournisseurs d’hébergement ou des machines locales.',
     icon: ArrowDownTrayIcon,
   },
   {
-    name: 'Download from URL',
-    description: 'Download files directly to your server from external URLs.',
+    name: 'Téléchargement depuis URL',
+    description: 'Téléchargez des fichiers directement sur votre serveur depuis des URLs externes.',
     icon: LinkIcon,
   },
   {
-    name: 'Managed Ports',
-    description: 'Automatic port management and forwarding. Custom port allocation available.',
+    name: 'Gestion des Ports',
+    description: 'Gestion et redirection automatiques des ports. Allocation de ports personnalisée disponible.',
     icon: SignalIcon,
   },
   {
-    name: 'JAR Installer',
-    description: 'One-click installation of custom server JARs and mod packs.',
+    name: 'Installateur de JAR',
+    description: 'Installation en un clic de JARs de serveur personnalisés et de packs de mods.',
     icon: ArchiveBoxIcon,
   },
   {
-    name: 'Friendly Schedule',
-    description: 'Schedule server tasks, backups, and restarts with an intuitive calendar interface.',
-    icon: ClockIcon,
-  },
-  {
-    name: 'Data Backup',
-    description: 'Automated backups with customizable retention policies. One-click restore.',
+    name: 'Sauvegarde des Données',
+    description: 'Sauvegardes automatiques avec des politiques de rétention personnalisables. Restauration en un clic.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'Server Properties',
-    description: 'Edit server configuration files through a user-friendly web interface.',
-    icon: CogIcon,
-  },
-  {
-    name: 'SFTP Access',
-    description: 'Secure file transfer access for advanced server management.',
+    name: 'Accès SFTP',
+    description: 'Accès sécurisé pour le transfert de fichiers pour une gestion avancée du serveur.',
     icon: ShieldCheckIcon,
-  },
-  {
-    name: 'Power All Pages',
-    description: 'Control multiple servers simultaneously from a single dashboard.',
-    icon: PowerIcon,
-  },
-  {
-    name: 'Steam Workshop',
-    description: 'Browse and install Steam Workshop content directly to your server.',
-    icon: Square3Stack3DIcon,
-  },
-  {
-    name: 'Server Splitter',
-    description: 'Split server resources between multiple game instances.',
-    icon: ArrowsPointingOutIcon,
-  },
-  {
-    name: 'Recycle Bin',
-    description: 'Safely delete files with the ability to restore them within 30 days.',
-    icon: TrashIcon,
   },
 ];
 
@@ -145,21 +110,21 @@ export default function ControlPanel() {
   const previewSections: Record<SectionType, JSX.Element> = {
     files: (
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">File Manager</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Gestionnaire de fichiers</h3>
         <div className="space-y-2">
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <FolderIcon className="h-4 w-4 text-primary-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">config</span>
             </div>
-            <span className="text-xs text-gray-500">Directory</span>
+            <span className="text-xs text-gray-500">Dossier</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <FolderIcon className="h-4 w-4 text-primary-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">plugins</span>
             </div>
-            <span className="text-xs text-gray-500">Directory</span>
+            <span className="text-xs text-gray-500">Dossier</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
@@ -173,74 +138,74 @@ export default function ControlPanel() {
     ),
     plugins: (
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Plugin Installer</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Gestion des plugins</h3>
         <div className="space-y-2">
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">WorldEdit</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Install</button>
+            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Installer</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">Essentials</span>
             </div>
-            <button className="text-xs bg-gray-600 text-white px-2 py-1 rounded">Update</button>
+            <button className="text-xs bg-gray-600 text-white px-2 py-1 rounded">MAJ</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">Vault</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Install</button>
+            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Installer</button>
           </div>
         </div>
       </div>
     ),
     versions: (
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Version Manager</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Versions</h3>
         <div className="space-y-2">
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.20.1</span>
             </div>
-            <span className="text-xs bg-primary-400 text-white px-2 py-1 rounded">Current</span>
+            <span className="text-xs bg-primary-400 text-white px-2 py-1 rounded">Actuelle</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.19.4</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Switch</button>
+            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Changer</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.18.2</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Switch</button>
+            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Changer</button>
           </div>
         </div>
       </div>
     ),
     settings: (
       <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Server Settings</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Paramètres</h3>
         <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600 dark:text-gray-300">Server Name</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">Nom du serveur</span>
             <input type="text" className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded px-2 py-1" defaultValue="My Game Server" />
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600 dark:text-gray-300">Max Players</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">Jouerus max</span>
             <input type="number" className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded px-2 py-1" defaultValue="20" />
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600 dark:text-gray-300">Difficulty</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">Difficulté</span>
             <select className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded px-2 py-1">
               <option>Easy</option>
               <option>Normal</option>
@@ -257,14 +222,14 @@ export default function ControlPanel() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary-400 dark:text-primary-300">
-            Control Panel
+            Panel Game
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Powerful Game Server Management
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-            Manage your game server with our intuitive control panel powered by Pterodactyl. Access all the features you need to run your server effectively.
-          </p>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Gestion facile de votre serveur
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Gérez votre serveur de jeu avec notre panel intuitif propulsé par Pterodactyl. Accédez à toutes les fonctionnalités dont vous avez besoin pour gérer efficacement votre serveur.
+            </p>
         </div>
 
         <div className="mt-16 relative">
@@ -284,7 +249,7 @@ export default function ControlPanel() {
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
                 <div className="flex-1 text-center">
-                  <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Game Server Control Panel</span>
+                  <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Panel Pterodactyl</span>
                 </div>
               </div>
 
@@ -294,11 +259,11 @@ export default function ControlPanel() {
                   {/* Server Stats */}
                   <div className="space-y-4">
                     <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4">
-                      <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Server Resources</h3>
+                      <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Ressources</h3>
                       <div className="space-y-3">
                         <div>
                           <div className="flex justify-between text-sm mb-1">
-                            <span className="text-gray-600 dark:text-gray-400">CPU Usage</span>
+                            <span className="text-gray-600 dark:text-gray-400">CPU</span>
                             <span className="text-gray-900 dark:text-white">45%</span>
                           </div>
                           <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
@@ -307,7 +272,7 @@ export default function ControlPanel() {
                         </div>
                         <div>
                           <div className="flex justify-between text-sm mb-1">
-                            <span className="text-gray-600 dark:text-gray-400">Memory Usage</span>
+                            <span className="text-gray-600 dark:text-gray-400">RAM</span>
                             <span className="text-gray-900 dark:text-white">2.5GB / 4GB</span>
                           </div>
                           <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
@@ -316,7 +281,7 @@ export default function ControlPanel() {
                         </div>
                         <div>
                           <div className="flex justify-between text-sm mb-1">
-                            <span className="text-gray-600 dark:text-gray-400">Disk Usage</span>
+                            <span className="text-gray-600 dark:text-gray-400">SSD</span>
                             <span className="text-gray-900 dark:text-white">15GB / 50GB</span>
                           </div>
                           <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
@@ -351,7 +316,7 @@ export default function ControlPanel() {
                         }`}
                       >
                         <FolderIcon className="h-5 w-5" />
-                        <span>Files</span>
+                        <span>Fichiers</span>
                       </button>
                       <button 
                         onClick={() => setActiveSection('plugins')}
@@ -384,7 +349,7 @@ export default function ControlPanel() {
                         }`}
                       >
                         <CogIcon className="h-5 w-5" />
-                        <span>Settings</span>
+                        <span>Paramètres</span>
                       </button>
                     </div>
 
@@ -444,7 +409,7 @@ export default function ControlPanel() {
                 onClick={() => setShowAllFeatures(!showAllFeatures)}
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-400 hover:text-primary-500 dark:text-primary-300 dark:hover:text-primary-200 transition-colors duration-200"
               >
-                {showAllFeatures ? 'Show Less Features' : 'Show All Features'}
+                {showAllFeatures ? 'Voir moins de fonctionnalités' : 'Voir plus de fonctionnalités'}
                 <ChevronDownIcon 
                   className={`h-5 w-5 transition-transform duration-200 ${showAllFeatures ? 'rotate-180' : ''}`}
                 />
