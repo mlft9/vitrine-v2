@@ -71,12 +71,12 @@ export default function Footer() {
         >
           <motion.div className="space-y-8" variants={itemVariants}>
             <Link href="/" className="inline-flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 FrozenHost
               </span>
             </Link>
             <p className="text-sm leading-6 text-gray-600 dark:text-gray-400 max-w-md">
-            FrozenHost : site spécialisé dans l'hébergement de services en ligne : hébergement web, VPS, serveurs de jeux (...) et bien plus encore !
+            Spécialisé dans l'hébergement de services en ligne : hébergement web, VPS, serveurs de jeux (...) et bien plus encore !
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (

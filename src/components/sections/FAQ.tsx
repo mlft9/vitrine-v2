@@ -68,8 +68,8 @@ export default function FAQ() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Questions Fréquemment Posées
+            <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-4xl">
+              Foire aux questions
             </p>
           </motion.div>
         </div>

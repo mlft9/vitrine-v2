@@ -173,8 +173,8 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
 );
 
 export default function GamesList() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All Games');
+  const [searchTerm] = useState('');
+  const [selectedCategory ] = useState('All Games');
   const [showAllGames, setShowAllGames] = useState(false);
 
   const filteredGames = games.filter(game => {
@@ -192,7 +192,7 @@ export default function GamesList() {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+            className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-4xl"
           >
             Nos Offres
           </motion.h2>

@@ -221,10 +221,10 @@ export default function ControlPanel() {
     <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-400 dark:text-blue-600">
+          {/* <h2 className="text-base font-semibold leading-7 text-blue-400 dark:text-blue-600">
             Panel Game
-          </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          </h2> */}
+            <p className="mt-2 text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-4xl">
             Gestion facile de votre serveur
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">

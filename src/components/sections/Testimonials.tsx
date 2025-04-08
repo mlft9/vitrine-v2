@@ -62,11 +62,14 @@ export default function Testimonials() {
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-600 dark:text-blue-400 uppercase">
+          {/* <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-600 dark:text-blue-400 uppercase">
             Testimonials
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 sm:text-4xl">
-            Trusted by Gamers Worldwide
+          </h2> */}
+          <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-4xl">
+            Avis Clients
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Découvrez ce que nos clients disent de nous. Leur satisfaction est notre priorité.
           </p>
         </div>
 
@@ -143,8 +146,8 @@ export default function Testimonials() {
                 }}
                 className={`h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-blue-600 w-8 dark:bg-blue-400'
-                    : 'bg-gray-300 w-3 dark:bg-gray-700 hover:bg-blue-400 dark:hover:bg-blue-500'
+                    ? 'bg-blue-600 w-8 dark:bg-blue-600'
+                    : 'bg-gray-300 w-3 dark:bg-gray-700 hover:bg-blue-700 dark:hover:bg-blue-500'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
