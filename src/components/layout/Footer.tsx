@@ -17,9 +17,9 @@ const navigation = {
     { name: 'Nous contacter', href: 'https://discord.gg/b4dgg75MmG' },
   ],
   legal: [
-    { name: 'Mention légales', href: '#' },
-    { name: 'Conditions d\'utilisation', href: '#' },
-    { name: 'Conditions de vente', href: '#' },
+    { name: 'Mention légales', href: 'mention-legales' },
+    { name: 'Conditions d\'utilisation', href: 'conditions-utilisation' },
+    { name: 'Conditions de vente', href: 'conditions-vente' },
   ],
   social: [
     {
