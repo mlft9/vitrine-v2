@@ -12,7 +12,7 @@ const navigation = {
     { name: 'Univers Web', href: 'https://client.frozenhost.fr/store/server-web' },
   ],
   support: [
-    { name: 'Documentation', href: '#' },
+    { name: 'Documentation', href: 'https://wiki.frozenhost.fr/' },
     { name: 'État des services', href: 'https://status.frozenhost.fr/status/public' },
     { name: 'Nous contacter', href: 'https://discord.gg/b4dgg75MmG' },
   ],

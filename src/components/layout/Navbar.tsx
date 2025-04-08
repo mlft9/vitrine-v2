@@ -82,7 +82,7 @@ const resources: NavItem[] = [
   {
     name: 'Wiki',
     description: 'Notre wiki pour toutes les informations',
-    href: '/wiki',
+    href: 'https://wiki.frozenhost.fr/',
     icon: BookOpenIcon
   },
   {
@@ -94,7 +94,7 @@ const resources: NavItem[] = [
   {
     name: 'Mentions Légales',
     description: 'Mentions légales de notre site',
-    href: '/legal-notice',
+    href: '/mention-legales',
     icon: ScaleIcon
   },
 ];
