@@ -32,7 +32,7 @@ export default function LocationsMap() {
     <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary-600 dark:text-primary-400">Notre réseau</h2>
+          <h2 className="text-base font-semibold leading-7 text-blue-600 dark:text-blue-400">Notre réseau</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             Nos serveurs
           </p>
@@ -49,7 +49,7 @@ export default function LocationsMap() {
             transition={{ duration: 0.5 }}
             className="rounded-xl bg-white p-8 ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700"
           >
-            <GlobeAltIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
+            <GlobeAltIcon className="mx-auto h-12 w-12 text-blue-600 dark:text-blue-400" />
             <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">2</h3>
             <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Total de nos serveurs</p>
           </motion.div>
@@ -59,7 +59,7 @@ export default function LocationsMap() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="rounded-xl bg-white p-8 ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700"
           >
-            <BoltIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
+            <BoltIcon className="mx-auto h-12 w-12 text-blue-600 dark:text-blue-400" />
             <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">&lt; 20ms</h3>
             <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Moyenne de latence</p>
           </motion.div>
@@ -69,7 +69,7 @@ export default function LocationsMap() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="rounded-xl bg-white p-8 ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700"
           >
-            <SignalIcon className="mx-auto h-12 w-12 text-primary-600 dark:text-primary-400" />
+            <SignalIcon className="mx-auto h-12 w-12 text-blue-600 dark:text-blue-400" />
             <h3 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">99.99%</h3>
             <p className="mt-2 text-base text-gray-600 dark:text-gray-300">Fonctionnement garanti</p>
           </motion.div>

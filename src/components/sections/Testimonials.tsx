@@ -62,7 +62,7 @@ export default function Testimonials() {
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-primary-600 dark:text-primary-400 uppercase">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-600 dark:text-blue-400 uppercase">
             Testimonials
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 sm:text-4xl">
@@ -119,7 +119,7 @@ export default function Testimonials() {
                             <div className="text-lg font-semibold text-gray-900 dark:text-white">
                               {testimonial.author.name}
                             </div>
-                            <div className="text-base text-primary-600 dark:text-primary-400">
+                            <div className="text-base text-blue-600 dark:text-blue-400">
                               {testimonial.author.role}
                             </div>
                           </div>
@@ -143,8 +143,8 @@ export default function Testimonials() {
                 }}
                 className={`h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-primary-600 w-8 dark:bg-primary-400'
-                    : 'bg-gray-300 w-3 dark:bg-gray-700 hover:bg-primary-400 dark:hover:bg-primary-500'
+                    ? 'bg-blue-600 w-8 dark:bg-blue-400'
+                    : 'bg-gray-300 w-3 dark:bg-gray-700 hover:bg-blue-400 dark:hover:bg-blue-500'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

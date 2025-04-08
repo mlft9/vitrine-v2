@@ -57,8 +57,8 @@ export default function Contact() {
               className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-700/5 transition-all duration-300 hover:shadow-xl"
             >
               <div className="flex flex-col items-center text-center">
-                <div className={`flex h-16 w-16 items-center justify-center rounded-full ${method.primary ? 'bg-primary-600' : 'bg-primary-500/10 dark:bg-primary-400/10'}`}>
-                  <method.icon className={`h-8 w-8 ${method.primary ? 'text-white' : 'text-primary-600 dark:text-primary-400'}`} />
+                <div className={`flex h-16 w-16 items-center justify-center rounded-full ${method.primary ? 'bg-blue-600' : 'bg-blue-500/10 dark:bg-blue-400/10'}`}>
+                  <method.icon className={`h-8 w-8 ${method.primary ? 'text-white' : 'text-blue-600 dark:text-blue-400'}`} />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
                   {method.name}
@@ -70,8 +70,8 @@ export default function Contact() {
                   href={method.href}
                   className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 ${
                     method.primary
-                      ? 'bg-primary-600 text-white hover:bg-primary-500 focus-visible:outline-primary-600'
-                      : 'bg-primary-50 text-primary-600 hover:bg-primary-100 dark:bg-primary-900/10 dark:text-primary-400 dark:hover:bg-primary-900/20'
+                      ? 'bg-blue-600 text-white hover:bg-blue-500 focus-visible:outline-primary-600'
+                      : 'bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/10 dark:text-blue-400 dark:hover:bg-blue-900/20'
                   }`}
                 >
                   {method.buttonText}
@@ -89,7 +89,7 @@ export default function Contact() {
           className="mx-auto mt-24 max-w-2xl"
         >
           <div className="flex flex-col items-center p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-700/5">
-            <ClockIcon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+            <ClockIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
             <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Disponibilité</h3>
             <div className="mt-4 text-center space-y-2">
               <p className="text-base text-gray-500 dark:text-gray-400">

@@ -140,7 +140,7 @@ export default function Hero() {
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
             Hébergeur performant à{' '}
-              <span className="text-primary-400 dark:text-primary-300">petit prix</span>
+            <span className="text-blue-700 dark:text-blue-400">petits prix</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
               Déployez votre serveur de jeu en quelques secondes. Profitez d'une faible latence, de hautes performances et d'une assistance 24/7.
@@ -156,11 +156,11 @@ export default function Hero() {
           >
             <Link
               href="/register"
-              className="rounded-md bg-primary-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
-            >
+              className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+              >
               Commencer
             </Link>
-            <Link href="/features" className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">
+            <Link href="/features" className="text-sm font-semibold leading-6 text-gray-600 dark:text-white">
               En savoir plus <span aria-hidden="true">→</span>
             </Link>
           </motion.div>
@@ -173,29 +173,29 @@ export default function Hero() {
           className="mt-16 flow-root sm:mt-24"
         >
           <div className="relative rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 dark:bg-white/5 dark:ring-white/10">
-            <div className="absolute right-4 top-4 flex space-x-2">
+            {/* <div className="absolute right-4 top-4 flex space-x-2">
               <div className="h-3 w-3 rounded-full bg-red-400" />
               <div className="h-3 w-3 rounded-full bg-yellow-400" />
               <div className="h-3 w-3 rounded-full bg-green-400" />
-            </div>
+            </div> */}
             <div className="rounded-lg bg-white p-4 dark:bg-gray-800">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                 <div className="relative flex items-center space-x-2 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
-                  <ServerIcon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+                  <ServerIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Statut du serveur</p>
                     <ServerStatus />
                   </div>
                 </div>
                 <div className="relative flex items-center space-x-2 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
-                  <CommandLineIcon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+                  <CommandLineIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Accès Console</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Accès Root Complet</p>
                   </div>
                 </div>
                 <div className="relative flex items-center space-x-2 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
-                  <CpuChipIcon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+                  <CpuChipIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Ressources</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">8 CPU / 32GB RAM</p>

@@ -114,21 +114,21 @@ export default function ControlPanel() {
         <div className="space-y-2">
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <FolderIcon className="h-4 w-4 text-primary-400" />
+              <FolderIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">config</span>
             </div>
             <span className="text-xs text-gray-500">Dossier</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <FolderIcon className="h-4 w-4 text-primary-400" />
+              <FolderIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">plugins</span>
             </div>
             <span className="text-xs text-gray-500">Dossier</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <CommandLineIcon className="h-4 w-4 text-primary-400" />
+              <CommandLineIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">server.properties</span>
             </div>
             <span className="text-xs text-gray-500">1.2 KB</span>
@@ -142,24 +142,24 @@ export default function ControlPanel() {
         <div className="space-y-2">
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
+              <PuzzlePieceIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">WorldEdit</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Installer</button>
+            <button className="text-xs bg-blue-400 hover:bg-blue-500 text-white px-2 py-1 rounded bg-blue-600">Installer</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
+              <PuzzlePieceIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">Essentials</span>
             </div>
             <button className="text-xs bg-gray-600 text-white px-2 py-1 rounded">MAJ</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
-              <PuzzlePieceIcon className="h-4 w-4 text-primary-400" />
+              <PuzzlePieceIcon className="h-4 w-4 text-blue-400" />
               <span className="text-sm text-gray-600 dark:text-gray-300">Vault</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Installer</button>
+            <button className="text-xs bg-blue-400 hover:bg-blue-500 text-white px-2 py-1 rounded bg-blue-600">Installer</button>
           </div>
         </div>
       </div>
@@ -173,21 +173,21 @@ export default function ControlPanel() {
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.20.1</span>
             </div>
-            <span className="text-xs bg-primary-400 text-white px-2 py-1 rounded">Actuelle</span>
+            <span className="text-xs bg-blue-900 text-white px-2 py-1 rounded">Actuelle</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.19.4</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Changer</button>
+            <button className="text-xs bg-blue-400 hover:bg-blue-500 text-white px-2 py-1 rounded bg-blue-600">Changer</button>
           </div>
           <div className="flex items-center justify-between p-2 bg-white dark:bg-gray-800 rounded-lg">
             <div className="flex items-center gap-2">
               <ArrowPathIcon className="h-4 w-4 text-blue-600" />
               <span className="text-sm text-gray-600 dark:text-gray-300">1.18.2</span>
             </div>
-            <button className="text-xs bg-primary-400 hover:bg-primary-500 text-white px-2 py-1 rounded transition-colors">Changer</button>
+            <button className="text-xs bg-blue-400 hover:bg-blue-500 text-white px-2 py-1 rounded bg-blue-600">Changer</button>
           </div>
         </div>
       </div>
@@ -201,7 +201,7 @@ export default function ControlPanel() {
             <input type="text" className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded px-2 py-1" defaultValue="My Game Server" />
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-600 dark:text-gray-300">Jouerus max</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">Joueurs max</span>
             <input type="number" className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded px-2 py-1" defaultValue="20" />
           </div>
           <div className="flex items-center justify-between">
@@ -221,7 +221,7 @@ export default function ControlPanel() {
     <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary-400 dark:text-primary-300">
+          <h2 className="text-base font-semibold leading-7 text-blue-400 dark:text-blue-600">
             Panel Game
           </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -309,9 +309,9 @@ export default function ControlPanel() {
                     <div className="grid grid-cols-2 gap-4">
                       <button 
                         onClick={() => setActiveSection('files')}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg transition-colors ${
+                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-600 ${
                           activeSection === 'files' 
-                            ? 'bg-primary-400 text-white hover:bg-primary-500' 
+                            ? 'bg-blue-400 text-white hover:bg-blue-500' 
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
@@ -320,9 +320,9 @@ export default function ControlPanel() {
                       </button>
                       <button 
                         onClick={() => setActiveSection('plugins')}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg transition-colors ${
+                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-600 ${
                           activeSection === 'plugins' 
-                            ? 'bg-primary-400 text-white hover:bg-primary-500' 
+                            ? 'bg-blue-400 text-white hover:bg-blue-500' 
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
@@ -331,9 +331,9 @@ export default function ControlPanel() {
                       </button>
                       <button 
                         onClick={() => setActiveSection('versions')}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg transition-colors ${
+                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-600 ${
                           activeSection === 'versions' 
-                            ? 'bg-primary-400 text-white hover:bg-primary-500' 
+                            ? 'bg-blue-400 text-white hover:bg-blue-500' 
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
@@ -342,9 +342,9 @@ export default function ControlPanel() {
                       </button>
                       <button 
                         onClick={() => setActiveSection('settings')}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg transition-colors ${
+                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-600 ${
                           activeSection === 'settings' 
-                            ? 'bg-primary-400 text-white hover:bg-primary-500' 
+                            ? 'bg-blue-400 text-white hover:bg-blue-500' 
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
                       >
@@ -389,7 +389,7 @@ export default function ControlPanel() {
                     className="flex flex-col"
                   >
                     <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 dark:text-white">
-                      <feature.icon className="h-5 w-5 flex-none text-primary-400 dark:text-primary-300" aria-hidden="true" />
+                      <feature.icon className="h-5 w-5 flex-none text-blue-400 dark:text-blue-300" aria-hidden="true" />
                       {feature.name}
                     </dt>
                     <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-400">
@@ -407,7 +407,7 @@ export default function ControlPanel() {
             >
               <button
                 onClick={() => setShowAllFeatures(!showAllFeatures)}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-400 hover:text-primary-500 dark:text-primary-300 dark:hover:text-primary-200 transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-blue-400 hover:text-blue-500 dark:text-blue-300 dark:hover:text-blue-500 duration-200"
               >
                 {showAllFeatures ? 'Voir moins de fonctionnalités' : 'Voir plus de fonctionnalités'}
                 <ChevronDownIcon 

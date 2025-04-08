@@ -8,7 +8,7 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FrozenHost - Hébergement Premium de Serveurs de Jeux',
+  title: 'FrozenHost - Hébergement Cloud',
   description: 'Découvrez FrozenHost : une infrastructure cloud fiable, sécurisée et innovante pour soutenir vos projets et propulser vos idées.',
 };
 
@@ -31,3 +31,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

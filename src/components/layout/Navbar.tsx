@@ -125,7 +125,7 @@ export default function Navbar() {
       >
         <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Left section with logo */}
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <Link href="/" className="flex-shrink-0">
               <motion.span 
                 className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-purple-500 bg-clip-text text-transparent"
@@ -136,7 +136,7 @@ export default function Navbar() {
                 FrozenHost
               </motion.span>
             </Link>
-          </div>
+          </div> */}
 
           {/* Center section with navigation */}
           <div className="hidden md:flex flex-1 items-center justify-center space-x-8">
@@ -145,8 +145,8 @@ export default function Navbar() {
               className={cn(
               'inline-flex items-center text-sm font-semibold leading-6',
               pathname === '/'
-                ? 'text-primary-400 dark:text-primary-300'
-                : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+                ? 'text-blue-400 dark:text-blue-300'
+                : 'text-gray-900 dark:text-gray-100 hover:text-blue-400 dark:hover:text-blue-300'
               )}
             >
               <HomeIcon className="h-5 w-5 mr-1" />
@@ -165,8 +165,8 @@ export default function Navbar() {
               className={cn(
               'inline-flex items-center text-sm font-semibold leading-6',
               pathname === 'https://discord.gg/b4dgg75MmG'
-                ? 'text-primary-400 dark:text-primary-300'
-                : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+                ? 'text-blue-400 dark:text-blue-300'
+                : 'text-gray-900 dark:text-gray-100 hover:text-blue-400 dark:hover:text-blue-300'
               )}
             >
               <QuestionMarkCircleIcon className="h-5 w-5 mr-1" />
@@ -197,13 +197,13 @@ export default function Navbar() {
               <ThemeToggle />
               <Link
                 href="/login"
-                className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300 transition-colors duration-200"
+                className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
               >
                 Se connecter
               </Link>
               <Link
                 href="/register"
-                className="rounded-md bg-primary-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
+                className="rounded-md bg-blue-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400"
               >
                 Commencer
               </Link>
@@ -256,7 +256,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/register"
-                className="block w-full rounded-lg px-4 py-2 text-center text-sm font-semibold bg-primary-400 text-white hover:bg-primary-500"
+                className="block w-full rounded-lg px-4 py-2 text-center text-sm font-semibold bg-blue-400 text-white hover:bg-blue-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Commencer
@@ -309,10 +309,10 @@ function MobileNavDropdown({
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-gray-800 group-hover:bg-white dark:group-hover:bg-gray-700">
-                {item.icon && <item.icon className="h-5 w-5 text-gray-600 dark:text-gray-400 group-hover:text-primary-400 dark:group-hover:text-primary-300" />}
+                {item.icon && <item.icon className="h-5 w-5 text-gray-600 dark:text-gray-400 group-hover:text-blue-400 dark:group-hover:text-blue-300" />}
               </div>
               <div>
-                <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-400 dark:group-hover:text-primary-300">
+                <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-400 dark:group-hover:text-blue-300">
                   {item.name}
                 </span>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -351,14 +351,14 @@ function NavDropdown({ title, items }: { title: string, items: NavItem[] }) {
           className={cn(
             'group inline-flex items-center gap-x-1 text-sm font-semibold leading-6 outline-none',
             isOpen
-              ? 'text-primary-400 dark:text-primary-300'
-              : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+              ? 'text-blue-400 dark:text-blue-300'
+              : 'text-gray-900 dark:text-gray-100 hover:text-blue-400 dark:hover:text-blue-300'
           )}
         >
           <span>{title}</span>
           <ChevronDownIcon
             className={cn(
-              'h-5 w-5 flex-none text-gray-400 group-hover:text-primary-400 dark:group-hover:text-primary-300 transition-transform duration-200',
+              'h-5 w-5 flex-none text-gray-400 group-hover:text-blue-400 dark:group-hover:text-blue-300 transition-transform duration-200',
               isOpen && 'rotate-180'
             )}
             aria-hidden="true"
@@ -385,10 +385,10 @@ function NavDropdown({ title, items }: { title: string, items: NavItem[] }) {
                     className="group relative flex gap-x-4 rounded-lg p-3 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
                   >
                     <div className="mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-gray-800 group-hover:bg-white dark:group-hover:bg-gray-700">
-                      <item.icon className="h-6 w-6 text-gray-600 dark:text-gray-400 group-hover:text-primary-400 dark:group-hover:text-primary-300" aria-hidden="true" />
+                      <item.icon className="h-6 w-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-400 dark:group-hover:text-blue-300" aria-hidden="true" />
                     </div>
                     <div>
-                      <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-400 dark:group-hover:text-primary-300">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-400 dark:group-hover:text-blue-300">
                         {item.name}
                         <span className="absolute inset-0" />
                       </span>
@@ -431,14 +431,14 @@ function NavMegaMenu({ title, items }: { title: string; items: NavItem[] }) {
           className={cn(
             'group inline-flex items-center gap-x-1 text-sm font-semibold leading-6 outline-none',
             isOpen
-              ? 'text-primary-400 dark:text-primary-300'
-              : 'text-gray-900 dark:text-gray-100 hover:text-primary-400 dark:hover:text-primary-300'
+              ? 'text-blue-400 dark:text-blue-300'
+              : 'text-gray-900 dark:text-gray-100 hover:text-blue-400 dark:hover:text-blue-300'
           )}
         >
           <span>{title}</span>
           <ChevronDownIcon
             className={cn(
-              'h-5 w-5 flex-none text-gray-400 group-hover:text-primary-400 dark:group-hover:text-primary-300 transition-transform duration-200',
+              'h-5 w-5 flex-none text-gray-400 group-hover:text-blue-400 dark:group-hover:text-blue-300 transition-transform duration-200',
               isOpen && 'rotate-180'
             )}
             aria-hidden="true"
@@ -476,11 +476,11 @@ function NavMegaMenu({ title, items }: { title: string; items: NavItem[] }) {
                             className="h-8 w-8 object-contain [filter:brightness(0.3)_saturate(100%)] dark:[filter:brightness(0.3)_saturate(100%)_invert(1)]"
                           />
                         ) : (
-                          <item.icon className="h-6 w-6 text-gray-600 dark:text-gray-400 group-hover:text-primary-400 dark:group-hover:text-primary-300" />
+                          <item.icon className="h-6 w-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-400 dark:group-hover:text-blue-300" />
                         )}
                       </div>
                       <div>
-                        <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-400 dark:group-hover:text-primary-300">
+                        <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-400 dark:group-hover:text-blue-300">
                           {item.name}
                           <span className="absolute inset-0" />
                         </span>
@@ -488,7 +488,7 @@ function NavMegaMenu({ title, items }: { title: string; items: NavItem[] }) {
                           {item.description}
                         </p>
                         {item.price && (
-                          <p className="mt-1 font-medium text-primary-400 dark:text-primary-300">
+                          <p className="mt-1 font-medium text-blue-400 dark:text-blue-300">
                             A partir de : {item.price}
                           </p>
                         )}

@@ -104,7 +104,7 @@ export default function FAQ() {
                             <ChevronDownIcon
                               className={`${
                                 open ? 'rotate-180 transform' : ''
-                              } h-5 w-5 text-primary-400 dark:text-primary-300 transition-transform duration-200`}
+                              } h-5 w-5 text-blue-400 dark:text-blue-300 transition-transform duration-200`}
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="px-6 pb-5">

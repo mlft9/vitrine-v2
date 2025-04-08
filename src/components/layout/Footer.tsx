@@ -83,7 +83,7 @@ export default function Footer() {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-300 transition-colors duration-200"
+                  className="text-gray-400 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-300 transition-colors duration-200"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -108,7 +108,7 @@ export default function Footer() {
                     <motion.li key={item.name} variants={itemVariants}>
                       <Link 
                         href={item.href} 
-                        className="text-sm leading-6 text-gray-600 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-300 transition-colors duration-200"
+                        className="text-sm leading-6 text-gray-600 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-300 transition-colors duration-200"
                       >
                         {item.name}
                       </Link>
@@ -123,7 +123,7 @@ export default function Footer() {
                     <motion.li key={item.name} variants={itemVariants}>
                       <Link 
                         href={item.href} 
-                        className="text-sm leading-6 text-gray-600 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-300 transition-colors duration-200"
+                        className="text-sm leading-6 text-gray-600 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-300 transition-colors duration-200"
                       >
                         {item.name}
                       </Link>
@@ -140,7 +140,7 @@ export default function Footer() {
                     <motion.li key={item.name} variants={itemVariants}>
                       <Link 
                         href={item.href} 
-                        className="text-sm leading-6 text-gray-600 hover:text-primary-400 dark:text-gray-400 dark:hover:text-primary-300 transition-colors duration-200"
+                        className="text-sm leading-6 text-gray-600 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-300 transition-colors duration-200"
                       >
                         {item.name}
                       </Link>

@@ -38,7 +38,7 @@ const features = [
     description: 'Mettez votre serveur en ligne en quelques secondes grâce à notre système de déploiement automatisé et nos installateurs en un clic.',
     icon: ClockIcon,
     stats: [
-      { value: '<30s', label: 'Temps de Mise en Ligne' },
+      { value: '<30s', label: 'Mise en service' },
       { value: '1-Clic', label: 'Installation' },
       { value: '24/7', label: 'Support' },
     ],
@@ -49,7 +49,7 @@ const features = [
     description: 'Matériel de pointe avec des ressources dédiées. Pas de survente, juste des performances pures pour vos jeux.',
     icon: CpuChipIcon,
     stats: [
-      { value: '64GB', label: 'RAM DDR4' },
+      { value: '192GB', label: 'RAM DDR4' },
       { value: '12TB', label: 'NVMe' },
       { value: '32', label: 'Cœurs' },
     ],
@@ -60,8 +60,8 @@ const features = [
     description: 'Plusieurs emplacements dans le monde garantissent une faible latence pour les joueurs. Choisissez l’emplacement le plus proche de votre communauté.',
     icon: ServerIcon,
     stats: [
-      { value: '10', label: 'Emplacements' },
-      { value: '40Gbps', label: 'Réseau' },
+      { value: '2', label: 'Emplacements' },
+      { value: '20Gbps', label: 'Réseau' },
       { value: '0%', label: 'Perte de Paquets' },
     ],
     gradient: 'from-pink-500 to-rose-600',
@@ -89,7 +89,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-base font-semibold leading-7 text-primary-400 dark:text-primary-300">
+            <h2 className="text-base font-semibold leading-7 text-blue-400 dark:text-blue-300">
               Pourquoi nous choisir ?
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">

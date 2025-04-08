@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UsersIcon, ServerIcon, ChevronDownIcon, ChevronRightIcon, StarIcon, CheckIcon } from '@heroicons/react/24/outline';
+import { ServerStackIcon, AdjustmentsVerticalIcon, CpuChipIcon, ChevronDownIcon, ChevronRightIcon, StarIcon, CheckIcon } from '@heroicons/react/24/outline';
 
 const categories = [
   'Tous les jeux'
@@ -12,45 +12,42 @@ const categories = [
 const games = [
   {
     id: 1,
-    name: 'FiveM',
-    description: 'Serveur de jeu multijoueur pour GTA V',
-    category: 'Bac à sable',
-    image: 'https://www.gta-multiplayer.cz/screenshots/original/147033.jpg',
-    monthlyPrice: 15.99,
-    cpu: 'Ryzen 5 3600',
-    ram: '16 Go',
-    disk: '500 Go SSD',
-    activeServers: 2,
-    players: 'x',
-    rating: 4.7,
-    uptime: 99,
-    features: ['x', 'x']
+    name: 'VPS Cloud',
+    description: 'Serveurs privés virtuel pour tout type de projet',
+    category: 'Cloud',
+    image: 'https://cdn.discordapp.com/attachments/1234817838355583018/1359260959746691322/d1d9006f-1407-4c4b-af53-aa0b718b0c39.jpg?ex=67f6d5ea&is=67f5846a&hm=7866c17be466c41afa8fd02497e345311423604c74c6c0af9660b9a53bb905b3&',
+    monthlyPrice: 5.99,
+    cpu: '2 vCPU Ryzen 9 3900x',
+    ram: '4 Go RAM',
+    disk: '40 Go',
+    rating: 4.8,
+    uptime: 99.98,
+    features: ['Accès complet root', 'Sauvegardes journalières', 'Support 24/7']
   },
   {
     id: 2,
-    name: 'Minecraft Java',
-    description: 'Original Java version of the popular building game',
-    category: 'Sandbox',
+    name: 'Serveurs de jeux',
+    description: 'Choississez parmi une large gamme de jeux',
+    category: 'Game',
     image: 'https://store-images.s-microsoft.com/image/apps.60323.13950084616086229.56d90257-df96-4000-bf85-a64704b3b019.d4ae0460-e24a-41ce-9e09-a92dc478362f?mode=scale&q=90&h=720&w=1280&format=jpg',
-    monthlyPrice: 8.99,
-    activeServers: 25000,
-    players: '2M+',
+    cpu: '2 vCPU Ryzen 9 3900x',
+    ram: '4 Go RAM',
+    disk: '40 Go',
+    monthlyPrice: 2.99,
     rating: 4.9,
-    uptime: 99,
-    features: ['Plugin Support', 'World Backups', 'Custom Seeds']
+    uptime: 99.98,
+    features: ['Panel Game', 'Sauvegardes journalières', 'Support 24/7']
   },
   {
     id: 3,
-    name: 'Minecraft Bedrock',
-    description: 'Cross-platform version of Minecraft',
-    category: 'Sandbox',
-    image: 'https://store-images.s-microsoft.com/image/apps.608.13510798887677013.5c7792f0-b887-4250-8c4e-4617af9c4509.bcd1385a-ad15-450c-9ddd-3ee80c37121a',
+    name: 'Services Web',
+    description: 'Hébergement de sites web et applications',
+    category: 'Web',
+    image: 'https://cdn.discordapp.com/attachments/1234817838355583018/1359261799597474025/a7911b4f-6bb5-45fc-adc2-4457fdfac804.jpg?ex=67f6d6b2&is=67f58532&hm=988df4a8b919e7c387867294f543605aab4d7a9014eb73a3115ac838364f9781&',
     monthlyPrice: 8.99,
-    activeServers: 15000,
-    players: '1.5M+',
     rating: 4.7,
-    uptime: 99,
-    features: ['Cross-Play', 'Add-Ons', 'Marketplace']
+    uptime: 99.98,
+    features: ['Panel de gestion', 'Sauvegardes journalières', 'Support 24/7']
   }
 ];
 
@@ -76,7 +73,7 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
           {/* <span className="inline-flex items-center rounded-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm px-2.5 py-0.5 text-xs font-medium text-gray-900 dark:text-white ring-1 ring-inset ring-gray-200/20 dark:ring-white/20">
             {game.category}
           </span> */}
-          <span className="inline-flex items-center rounded-full bg-primary-500/90 backdrop-blur-sm px-2.5 py-0.5 text-xs font-medium text-white">
+          <span className="inline-flex items-center rounded-full bg-blue-500/90 backdrop-blur-sm px-2.5 py-0.5 text-xs font-medium text-white">
             {game.monthlyPrice}€/mo
           </span>
         </div>
@@ -143,16 +140,16 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
               <p className="font-medium text-gray-700 dark:text-gray-300">A partir de :</p>
               <div className="space-y-1 text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-1.5">
-                  <ServerIcon className="h-3.5 w-3.5 text-primary-500" />
-                  CPU : {game.cpu}
+                  <CpuChipIcon className="h-3.5 w-3.5 text-blue-500" />
+                  {game.cpu}
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <ServerIcon className="h-3.5 w-3.5 text-primary-500" />
-                  RAM : {game.ram}
+                  <AdjustmentsVerticalIcon className="h-3.5 w-3.5 text-blue-500" />
+                  {game.ram}
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <ServerIcon className="h-3.5 w-3.5 text-primary-500" />
-                  SSD : {game.disk}
+                  <ServerStackIcon className="h-3.5 w-3.5 text-blue-500" />
+                  {game.disk}
                 </div>
               </div>
             </div>
@@ -165,8 +162,8 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
             <p className="text-lg font-semibold text-gray-900 dark:text-white">{game.monthlyPrice}€<span className="text-sm font-normal text-gray-500 dark:text-gray-400">/mo</span></p>
           </div>
           
-          <button className="inline-flex items-center rounded-lg bg-primary-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-primary-500 transition-colors duration-200">
-            En savoir plus
+          <button className="inline-flex items-center rounded-lg bg-blue-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors duration-200">
+          En savoir plus
             <ChevronRightIcon className="ml-1 h-4 w-4" />
           </button>
         </div>
@@ -197,7 +194,7 @@ export default function GamesList() {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
           >
-            Serveurs de jeux
+            Nos Offres
           </motion.h2>
             <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -205,7 +202,7 @@ export default function GamesList() {
             transition={{ delay: 0.1 }}
             className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400"
             >
-            Déployez votre serveur de jeu en quelques minutes avec nos solutions d'hébergement optimisées
+            Choisissez un service d'hébergement adapté à vos besoins et à votre budget.
             </motion.p>
         </div>
 
@@ -220,7 +217,7 @@ export default function GamesList() {
                 onClick={() => setSelectedCategory(category)}
                 className={`rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/20 hover:shadow-primary-500/20'
+                    ? 'bg-blue-600 text-white shadow-lg shadow-primary-600/20 hover:shadow-primary-500/20'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
                 }`}
               >
@@ -252,7 +249,7 @@ export default function GamesList() {
             <div className="mt-12 text-center">
               <button
                 onClick={() => setShowAllGames(!showAllGames)}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300 transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
               >
                 {showAllGames ? 'Show Less' : 'Show All Games'}
                 <ChevronDownIcon 

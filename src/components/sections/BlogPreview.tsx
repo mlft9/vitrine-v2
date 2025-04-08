@@ -83,7 +83,7 @@ export default function BlogPreview() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="px-3 py-1 text-sm font-medium text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 rounded-full">
+                  <span className="px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-full">
                     {post.category}
                   </span>
                   <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
@@ -121,7 +121,7 @@ export default function BlogPreview() {
                       </p>
                     </div>
                   </div>
-                  <button className="flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors">
+                  <button className="flex items-center text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
                     Read more
                     <ArrowRightIcon className="w-4 h-4 ml-1" />
                   </button>
