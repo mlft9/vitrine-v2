@@ -140,7 +140,7 @@ export default function Hero() {
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
             Hébergeur performant à{' '}
-            <span className="text-blue-700 dark:text-blue-400">petits prix</span>
+            <span className="font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">petits prix</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
               Déployez votre serveur de jeu en quelques secondes. Profitez d'une faible latence, de hautes performances et d'une assistance 24/7.
