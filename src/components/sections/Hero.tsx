@@ -154,7 +154,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="mt-10 flex items-center justify-center gap-x-6"
           >
-            <Link
+            {/* <Link
               href="/register"
               className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
               >
@@ -162,7 +162,7 @@ export default function Hero() {
             </Link>
             <Link href="/features" className="text-sm font-semibold leading-6 text-gray-600 dark:text-white">
               En savoir plus <span aria-hidden="true">→</span>
-            </Link>
+            </Link> */}
           </motion.div>
         </div>
 
@@ -191,14 +191,14 @@ export default function Hero() {
                   <CommandLineIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Accès Console</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Accès Root Complet</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Accès root complet</p>
                   </div>
                 </div>
                 <div className="relative flex items-center space-x-2 rounded-lg border border-gray-200 p-4 dark:border-gray-700">
                   <CpuChipIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Ressources</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">8 CPU / 32GB RAM</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">8 CPU / 32Gb RAM</p>
                   </div>
                 </div>
               </div>

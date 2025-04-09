@@ -13,7 +13,7 @@ const games = [
   {
     id: 1,
     name: 'VPS Cloud',
-    description: 'Serveurs privés virtuel pour tout type de projet',
+    description: 'Serveurs privés virtuel pour tout type de projet.',
     category: 'Cloud',
     image: 'https://cdn.discordapp.com/attachments/1234817838355583018/1359260959746691322/d1d9006f-1407-4c4b-af53-aa0b718b0c39.jpg?ex=67f6d5ea&is=67f5846a&hm=7866c17be466c41afa8fd02497e345311423604c74c6c0af9660b9a53bb905b3&',
     monthlyPrice: 5.99,
@@ -27,7 +27,7 @@ const games = [
   {
     id: 2,
     name: 'Serveurs de jeux',
-    description: 'Choississez parmi une large gamme de jeux',
+    description: 'Choississez parmi une large gamme de jeux.',
     category: 'Game',
     image: 'https://store-images.s-microsoft.com/image/apps.60323.13950084616086229.56d90257-df96-4000-bf85-a64704b3b019.d4ae0460-e24a-41ce-9e09-a92dc478362f?mode=scale&q=90&h=720&w=1280&format=jpg',
     cpu: '2 vCPU Ryzen 9 3900x',
@@ -41,7 +41,7 @@ const games = [
   {
     id: 3,
     name: 'Services Web',
-    description: 'Hébergement de sites web et applications',
+    description: 'Hébergement de sites web et applications.',
     category: 'Web',
     image: 'https://cdn.discordapp.com/attachments/1234817838355583018/1359261799597474025/a7911b4f-6bb5-45fc-adc2-4457fdfac804.jpg?ex=67f6d6b2&is=67f58532&hm=988df4a8b919e7c387867294f543605aab4d7a9014eb73a3115ac838364f9781&',
     monthlyPrice: 8.99,
@@ -159,7 +159,7 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
         <div className="mt-4 pt-4 border-t border-gray-200/10 dark:border-gray-700/50 flex items-center justify-between">
           <div className="space-y-1">
             <p className="text-xs text-gray-500 dark:text-gray-400">A partir de :</p>
-            <p className="text-lg font-semibold text-gray-900 dark:text-white">{game.monthlyPrice}€<span className="text-sm font-normal text-gray-500 dark:text-gray-400">/mo</span></p>
+            <p className="text-lg font-semibold text-gray-900 dark:text-white">{game.monthlyPrice}€<span className="text-sm font-normal text-gray-500 dark:text-gray-400">/mois</span></p>
           </div>
           
           <button className="inline-flex items-center rounded-lg bg-blue-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors duration-200">

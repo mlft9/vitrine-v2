@@ -13,7 +13,7 @@ import {
 const features = [
   {
     name: 'Performances Foudroyantes',
-    description: 'Profitez d’une vitesse inégalée grâce à notre stockage NVMe SSD et nos processeurs AMD EPYC haute performance.',
+    description: 'Profitez d’une vitesse inégalée grâce à notre stockage NVMe SSD et nos processeurs AMD Ryzen haute performances.',
     icon: BoltIcon,
     stats: [
       { value: '99.9%', label: 'Disponibilité' },
@@ -35,7 +35,7 @@ const features = [
   },
   {
     name: 'Mise en Ligne Instantanée',
-    description: 'Mettez votre serveur en ligne en quelques secondes grâce à notre système de déploiement automatisé et nos installateurs en un clic.',
+    description: 'Votre serveur est en ligne en quelques secondes grâce à notre système de déploiement automatisé et nos installateurs en un clic.',
     icon: ClockIcon,
     stats: [
       { value: '<30s', label: 'Mise en service' },

@@ -228,7 +228,7 @@ export default function ControlPanel() {
             Gestion facile de votre serveur
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-            Gérez votre serveur de jeu avec notre panel intuitif propulsé par Pterodactyl. Accédez à toutes les fonctionnalités dont vous avez besoin pour gérer efficacement votre serveur.
+            Gérez votre serveur de jeu avec notre panel intuitif propulsé par Pterodactyl. Accédez à toutes les fonctionnalités dont vous avez besoin pour gérer votre serveur.
             </p>
         </div>
 
