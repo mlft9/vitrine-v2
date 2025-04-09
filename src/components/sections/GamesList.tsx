@@ -198,7 +198,7 @@ export default function GamesList() {
             transition={{ delay: 0.1 }}
             className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400"
             >
-            Choisissez un service d'hébergement adapté à vos besoins et à votre budget.
+            Choisissez un service d&apos;hébergement adapté à vos besoins et à votre budget.
             </motion.p>
         </div>
 

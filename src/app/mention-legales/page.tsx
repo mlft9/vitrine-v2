@@ -34,10 +34,10 @@ export default function LegalNotice() {
               Directeur de la publication : [Nom du directeur]
             </p>
             <p>
-              Hébergeur : [Nom de lvhébergeur], [Adresse de l'hébergeur]
+              Hébergeur : [Nom de lvhébergeur], [Adresse de l&apos;hébergeur]
             </p>
             <p>
-              Pour toute question ou demande d&apos;information, vous pouvez nous contacter à l'adresse suivante : [Adresse e-mail de contact]
+              Pour toute question ou demande d&apos;information, vous pouvez nous contacter à l&apos;adresse suivante : [Adresse e-mail de contact]
             </p>
             <p>
               Ce site respecte la vie privée de l&apos;internaute et se conforme strictement aux lois en vigueur sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n&apos;est collectée à votre insu. Aucune information personnelle n&apos;est cédée à des tiers.

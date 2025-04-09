@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import {
-  QuestionMarkCircleIcon,
   ChatBubbleLeftRightIcon,
   DocumentTextIcon,
   ClockIcon,
