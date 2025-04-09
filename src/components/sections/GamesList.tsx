@@ -5,10 +5,6 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ServerStackIcon, AdjustmentsVerticalIcon, CpuChipIcon, ChevronDownIcon, ChevronRightIcon, StarIcon, CheckIcon } from '@heroicons/react/24/outline';
 
-const categories = [
-  'Tous les jeux'
-];
-
 const games = [
   {
     id: 1,

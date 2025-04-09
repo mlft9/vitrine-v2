@@ -15,15 +15,10 @@ import {
   CogIcon,
   PuzzlePieceIcon,
   UserGroupIcon,
-  ClockIcon,
   ArrowDownTrayIcon,
   SignalIcon,
   ArchiveBoxIcon,
-  TrashIcon,
   LinkIcon,
-  PowerIcon,
-  Square3Stack3DIcon,
-  ArrowsPointingOutIcon,
   ChevronDownIcon,
 } from '@heroicons/react/24/outline';
 

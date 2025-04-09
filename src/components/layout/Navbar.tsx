@@ -7,17 +7,11 @@ import { Popover, Transition } from '@headlessui/react';
 import { 
   ServerIcon, 
   CommandLineIcon, 
-  CpuChipIcon,
-  CloudIcon,
-  ShieldCheckIcon,
   Bars3Icon,
   XMarkIcon,
   HomeIcon,
-  BuildingOfficeIcon,
   NewspaperIcon,
   QuestionMarkCircleIcon,
-  UserGroupIcon,
-  BriefcaseIcon,
   UsersIcon,
   BookOpenIcon,
   ScaleIcon

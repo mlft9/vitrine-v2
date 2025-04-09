@@ -76,7 +76,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-6 text-gray-600 dark:text-gray-400 max-w-md">
-            Spécialisé dans l'hébergement de services en ligne : hébergement web, VPS, serveurs de jeux (...) et bien plus encore !
+            Spécialisé dans l&apos;hébergement de services en ligne : hébergement web, VPS, serveurs de jeux (...) et bien plus encore !
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (

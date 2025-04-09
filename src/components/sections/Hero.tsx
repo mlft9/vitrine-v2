@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { ServerIcon, CommandLineIcon, CpuChipIcon } from '@heroicons/react/24/outline';
 
 interface TypewriterTextProps {
@@ -147,7 +146,7 @@ export default function Hero() {
             <span className="font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">petits prix</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Déployez votre serveur de jeu en quelques secondes. Profitez d'une faible latence, de hautes performances et d'une assistance 24/7.
+              Déployez votre serveur de jeu en quelques secondes. Profitez d&apos;une faible latence, de hautes performances et d'une assistance 24/7.
               Conçu par des joueurs, pour des joueurs.
             </p>
           </motion.div>

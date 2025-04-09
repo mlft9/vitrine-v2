@@ -22,7 +22,7 @@ const locations = [
 ];
 
 export default function LocationsMap() {
-  const [selectedRegion, setSelectedRegion] = useState('All Regions');
+  const [selectedRegion] = useState('All Regions');
 
   const filteredLocations = locations.filter(location => 
     selectedRegion === 'All Regions' || location.region.includes(selectedRegion)

@@ -40,7 +40,7 @@ export default function LegalNotice() {
               Pour toute question ou demande d&apos;information, vous pouvez nous contacter à l'adresse suivante : [Adresse e-mail de contact]
             </p>
             <p>
-              Ce site respecte la vie privée de l&apos;internaute et se conforme strictement aux lois en vigueur sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n'est collectée à votre insu. Aucune information personnelle n'est cédée à des tiers.
+              Ce site respecte la vie privée de l&apos;internaute et se conforme strictement aux lois en vigueur sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n&apos;est collectée à votre insu. Aucune information personnelle n&apos;est cédée à des tiers.
             </p>
             <p>
               Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d&apos;un droit d&apos;accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à [Adresse e-mail de contact].

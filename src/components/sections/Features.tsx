@@ -93,7 +93,7 @@ export default function Features() {
               Pourquoi nous choisir ?
             </h2> */}
             <p className="mt-2 text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-4xl">
-              L'expérience FrozenHost
+              L&apos;expérience FrozenHost
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
               Découvrez la différence avec notre infrastructure de pointe et nos fonctionnalités premium conçues pour vous.

@@ -41,7 +41,7 @@ export default function Contact() {
               Contacter le support
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Obtenez de l'aide de notre équipe 24h/24 et 7j/7. Choisissez votre option de support préférée ci-dessous.
+              Obtenez de l&apos;aide de notre équipe 24h/24 et 7j/7. Choisissez votre option de support préférée ci-dessous.
             </p>
           </motion.div>
         </div>
