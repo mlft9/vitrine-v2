@@ -13,7 +13,7 @@ export default function LegalNotice() {
           className="mx-auto max-w-2xl text-center"
         >
           <h2 className="text-base font-semibold leading-7 text-blue-600 dark:text-blue-400">
-            Condition d'utilisation
+            Condition d&apos;utilisation
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Informations :

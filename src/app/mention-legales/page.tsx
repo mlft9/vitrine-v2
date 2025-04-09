@@ -28,22 +28,22 @@ export default function LegalNotice() {
             className="prose dark:prose-invert"
           >
             <p>
-              Ce site est édité par [Nom de l'entreprise ou de l'individu], dont le siège social est situé à [Adresse].
+              Ce site est édité par [Nom de l&apos;entreprise ou de l&apos;individu], dont le siège social est situé à [Adresse].
             </p>
             <p>
               Directeur de la publication : [Nom du directeur]
             </p>
             <p>
-              Hébergeur : [Nom de l'hébergeur], [Adresse de l'hébergeur]
+              Hébergeur : [Nom de lvhébergeur], [Adresse de l'hébergeur]
             </p>
             <p>
-              Pour toute question ou demande d'information, vous pouvez nous contacter à l'adresse suivante : [Adresse e-mail de contact]
+              Pour toute question ou demande d&apos;information, vous pouvez nous contacter à l'adresse suivante : [Adresse e-mail de contact]
             </p>
             <p>
-              Ce site respecte la vie privée de l'internaute et se conforme strictement aux lois en vigueur sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n'est collectée à votre insu. Aucune information personnelle n'est cédée à des tiers.
+              Ce site respecte la vie privée de l&apos;internaute et se conforme strictement aux lois en vigueur sur la protection de la vie privée et des libertés individuelles. Aucune information personnelle n'est collectée à votre insu. Aucune information personnelle n'est cédée à des tiers.
             </p>
             <p>
-              Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à [Adresse e-mail de contact].
+              Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d&apos;un droit d&apos;accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à [Adresse e-mail de contact].
             </p>
           </motion.div>
         </div>
