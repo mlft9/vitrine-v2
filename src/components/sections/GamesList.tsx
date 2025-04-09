@@ -162,7 +162,7 @@ const GameCard = ({ game }: { game: typeof games[number] }) => (
             <p className="text-lg font-semibold text-gray-900 dark:text-white">{game.monthlyPrice}€<span className="text-sm font-normal text-gray-500 dark:text-gray-400">/mois</span></p>
           </div>
           
-          <button className="inline-flex items-center rounded-lg bg-blue-600 px-3.5 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors duration-200">
+          <button className="inline-flex items-center rounded-lg bg-purple-500 px-3.5 py-2 text-sm font-medium text-white hover:bg-purple-700 transition-colors duration-200">
           En savoir plus
             <ChevronRightIcon className="ml-1 h-4 w-4" />
           </button>

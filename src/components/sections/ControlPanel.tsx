@@ -407,7 +407,7 @@ export default function ControlPanel() {
             >
               <button
                 onClick={() => setShowAllFeatures(!showAllFeatures)}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-blue-400 hover:text-blue-500 dark:text-blue-300 dark:hover:text-blue-500 duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-purple-500 hover:text-purple-700 dark:text-purple-500 dark:hover:text-purple-700 duration-200"
               >
                 {showAllFeatures ? 'Voir moins de fonctionnalités' : 'Voir plus de fonctionnalités'}
                 <ChevronDownIcon 

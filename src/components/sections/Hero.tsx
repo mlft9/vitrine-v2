@@ -138,7 +138,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent sm:text-6xl">
+            FrozenHost
+            </h1>
+            <br />
+            <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Hébergeur performant à{' '}
             <span className="font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">petits prix</span>
             </h1>

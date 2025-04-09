@@ -19,7 +19,7 @@ const contactMethods = [
   },
   {
     name: 'Wiki & Documentation',
-    description: 'Découvrez notre documentation complète et nos guides.',
+    description: 'Découvrez notre documentation complète et nos guides pour vos services.',
     icon: DocumentTextIcon,
     buttonText: 'Découvrir',
     href: '#',
@@ -58,7 +58,7 @@ export default function Contact() {
             >
               <div className="flex flex-col items-center text-center">
                 <div className={`flex h-16 w-16 items-center justify-center rounded-full ${method.primary ? 'bg-blue-800' : 'bg-blue-500/10 dark:bg-blue-400/10'}`}>
-                  <method.icon className={`h-8 w-8 ${method.primary ? 'text-white' : 'text-blue-600 dark:text-blue-400'}`} />
+                  <method.icon className={`h-8 w-8 ${method.primary ? 'text-white' : 'text-blue-600 dark:text-purple-500'}`} />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
                   {method.name}
@@ -71,7 +71,7 @@ export default function Contact() {
                   className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 ${
                     method.primary
                       ? 'bg-blue-600 text-white hover:bg-blue-600 focus-visible:outline-blue-600'
-                      : 'bg-blue-50 text-blue-600 hover:bg-blue-500 dark:bg-blue-900/10 dark:text-blue-400 dark:hover:bg-blue-900/20'
+                      : 'bg-blue-50 text-blue-400 hover:bg-purple-700 dark:bg-purple-500 dark:text-white dark:hover:bg-blue-900/20'
                   }`}
                 >
                   {method.buttonText}
