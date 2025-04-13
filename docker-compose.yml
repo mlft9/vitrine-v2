@@ -1,0 +1,21 @@
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+
+  caddy:
+    build:
+      context: .
+      dockerfile: Dockerfile.caddy
+    ports:
+      - "4590:4589"
+    depends_on:
+      - nextjs
