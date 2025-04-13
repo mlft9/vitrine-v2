@@ -35,6 +35,7 @@ export default function LegalNotice() {
 
     <p>
       SIRET : <strong>912 231 040 000 11</strong><br/>
+      TVA : <strong>FR 25912231040</strong><br/>
     </p>
 
     <p>
