@@ -12,12 +12,12 @@ RUN npm install
 
 # Copier le reste des fichiers de l'application
 COPY . .
-ENV NEXT_DISABLE_ESLINT=true
+
 # Construire l'application Next.js
 RUN npm run build
 
 # Exposer le port sur lequel l'application va tourner
-EXPOSE 3098
+EXPOSE 3000
 
 # Commande pour démarrer l'application
 CMD ["npm", "start"]

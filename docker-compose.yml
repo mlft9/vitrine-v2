@@ -1,11 +1,10 @@
-
 services:
   nextjs:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3098:3098"
+      - "3000:3000"
     volumes:
       - .:/app
       - /app/node_modules
@@ -16,6 +15,6 @@ services:
       context: .
       dockerfile: Dockerfile.caddy
     ports:
-      - "4590:4590"
+      - "4589:4589"
     depends_on:
       - nextjs

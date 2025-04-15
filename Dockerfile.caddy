@@ -5,6 +5,7 @@ FROM caddy:2
 COPY Caddyfile /etc/caddy/Caddyfile
 
 # Exposer le port sur lequel Caddy va tourner
-EXPOSE 4590
+EXPOSE 4589
+
 # Commande pour démarrer Caddy
 CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
