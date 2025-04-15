@@ -17,7 +17,7 @@ ENV NEXT_DISABLE_ESLINT=true
 RUN npm run build
 
 # Exposer le port sur lequel l'application va tourner
-EXPOSE 3101
+EXPOSE 3098
 
 # Commande pour démarrer l'application
 CMD ["npm", "start"]
