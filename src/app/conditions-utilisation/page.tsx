@@ -28,7 +28,7 @@ export default function LegalNotice() {
             className="prose dark:prose-invert"
           >
             <p>
-              Début
+              En cours de rédaction...
             </p>
           </motion.div>
         </div>
