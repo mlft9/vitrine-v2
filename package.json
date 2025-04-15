@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3050",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -16,6 +17,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
     "next": "^14.2.27",
+    "next-sitemap": "^4.2.3",
     "next-themes": "^0.4.3",
     "react": "^18",
     "react-dom": "^18",
